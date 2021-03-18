@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>More Music</title>
+	<link rel="stylesheet" href="static/css/styles.css">
+</head>
+	<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>MoreMusic</span>
+		</div>
+		<div id="about">
+			<a href="#" onclick="slowScroll('#main')" title="Возможности">Возможности</a>
+			<a href="#" onclick="slowScroll('#overiew')" title="Преимущества">Преимущества</a>
+			<a href="#" onclick="slowScroll('#contact')" title="Контакты">Контакты</a>
+			<a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+		</div>
+	</header>
+
+	<div id="top">
+		<h1>Музыка</h1>
+		<h3>как стиль жизни</h3>
+	</div>
+
+
+	<div id="main">
+		<div class="intro">
+			<h2>Наши услуги помогут вам!</h2>
+			<span>Большой выбор всего, что может пригодиться</span>
+		</div>
+		<div class="text">
+			<span>В ходе этого видео мы сделаем полноценный шаблон сайта на чистом HTML5 и CSS3. 
+			Дополнительно мы также поработаем с сервером и опубликуем наш сайт в Интернете на VDS сервер,
+			используя панель VestaCP.</span>
+		</div>
+	</div>
+
+	<div id="overview">
+		<h2>Преимущества</h2>
+		<h4>С нами все проще</h4>
+
+		<div class="img">
+			<img src="https://itproger.com/img/courses/1538723047.jpg" alt="">
+			<span>Кликабельное превью для видео</span>
+		</div>
+		<div class="img">
+			<img src="https://itproger.com/img/courses/1538723047.jpg" alt="">
+			<span>Кликабельное превью для видео</span>
+		</div>
+		<div class="img">
+			<img src="https://itproger.com/img/courses/1538723047.jpg" alt="">
+			<span>Кликабельное превью для видео</span>
+		</div>
+		<div class="img">
+			<img src="https://itproger.com/img/courses/1538723047.jpg" alt="">
+			<span>Кликабельное превью для видео</span>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		function slowScroll(id) {
+			$('html, body').animate({
+				scrollTop: $(id).offset().top
+			}, 500);
+		}
+
+		$(document).on("scroll", function () {
+			if($(window).scrollTop() === 0)
+				$("header").removeClass("fixed");
+			else
+				$("header").attr("class", "fixed");
+		});
+	</script>	
+</body>
+</html>
