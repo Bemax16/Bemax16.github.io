@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pangolin&display=swap');
 
 * {
     margin: 0;
@@ -8,11 +8,11 @@
 
 body, html {
     width: 100%;
-    height: 2000px;
+    height: 100%;
 }
 
 body {
-    background-color: #fafafa;
+    background-color: #fafafa; 
     font-family: Trebuchet MS, Helvetica;
 }
 
@@ -28,10 +28,10 @@ header #logo {
     cursor: pointer;
 }
 header #logo span {
-    font-size: 1.7em;
+    font-size: 2.2em;
     line-height: 45px;
     margin-left: 40px;
-    font-family: 'Bebas Neue ', serif;
+    font-family: 'Bebas Neue', serif;
 }
 
 
@@ -65,16 +65,18 @@ header #logo span {
     line-height: 40px;
     margin-bottom: 10px;
 }
-#about > a {color: #fff}
+#about > a {color: #fff;
+    text-decoration: none;
+
+}
 
 #about > a:hover {
-    color: #b0b0b0;
-    text-decoration: underline;
-
+    color: #b0b0b0; 
 }
 
 #about > a:not(:last-child) {
     margin-right: 7%;
+    text-decoration: none;
 }
 
 .fixed {
@@ -87,13 +89,16 @@ header #logo span {
 header.fixed #logo {
     color: #343434;
 }
+
+
 .fixed #about a{color: #343434}
 .fixed #about a:hover {color: #7c7c7c}
 
 
 #top {
-    width: 100%; 
-    background-image: url(https://yu.edu.kz/wp-content/uploads/2018/08/aditya-chinchure-494048-unsplash.jpg);
+    width: 100%;
+    height: 1000px; 
+    background-image: url('https://yu.edu.kz/wp-content/uploads/2018/08/aditya-chinchure-494048-unsplash.jpg');
     background-blend-mode: multiply;
     background-color: #2e3a44;
     background-size: cover;
@@ -109,7 +114,7 @@ header.fixed #logo {
     }
 }
 
-@media (max-width: 1000px) and (min-with: 651px) {
+@media (max-width: 1000px) and (min-width: 651px) {
     #top {
         font-size: 2em;
         height: 600px;
@@ -120,7 +125,6 @@ header.fixed #logo {
     #top {
         font-size: 1.3em;
         padding-top: 50%;
-        height: 500px;
     }
 }
 
@@ -139,7 +143,7 @@ header.fixed #logo {
     background-color: #f6f6f6;
     border-top: 2px solid silver;
     color:  #484848;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 @media (min-width: 1401px) {
@@ -177,7 +181,7 @@ header.fixed #logo {
 
 #overview {
     float: left;
-    background-image: url(https://victoria.mediaplanet.com/app/uploads/sites/102/2019/07/mainimage-26.jpg);
+    background-image: url('https://i0.wp.com/sova.ponominalu.ru/wp-content/uploads/2018/06/aMKIbShBgpg.jpg?fit=2048%2C1366&ssl=1');
 
     background-blend-mode: multiply;
     background-color: #4f1c75;
@@ -188,6 +192,13 @@ header.fixed #logo {
     width: 100%;
     text-align: center;
     color: white;
+    font-family: 'Pangolin';
+
+    
+}
+
+#overview h2 {
+    font-family: 'Bebas Neue';
 }
 
 #overview h2 {font-size: 4em}
@@ -197,7 +208,7 @@ header.fixed #logo {
     float: left;
     width: 30%;
     margin-right: 5%;
-    margin-top: 50%;
+    margin-top: 50px;
 }
 
 #overview .img:nth-child(odd) {
@@ -210,6 +221,7 @@ header.fixed #logo {
     border: 2px solid silver;
     width: 100%;
     max-width: 500px;
+    float: left;
 }
 
 #overview span {
@@ -223,6 +235,113 @@ header.fixed #logo {
     #overview .img {
         width: 80%!important;
         margin-right: 0!important;
-        margin-left: 10!important;
+        margin-left: 10%!important;
     }
+}
+
+#contacts {
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-top: 4px solid #ccc;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-family: 'Bebas Neue', serif;
+    font-weight: lighter;
+}
+
+#contacts h5 {font-size: 3em; color: #4F4F4F}
+
+#form-input {
+    margin-top: 15px;
+    width: 35%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#form_input label {
+    color: #505050;
+    cursor: pointer;
+    font-size: 1.4em;
+}
+
+#form_input label >span {
+    color: #e87e7e;
+}
+
+#form_input input,#form_input textarea {
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size: 0.9em;
+    color: #4a4a4a;
+}
+
+#form_input input:focus, #form_input textarea:focus {
+    border-color: #333;
+}
+
+.btn {
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #ec6550;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #c15443;
+}
+
+#faq {
+    background-color: white;
+    border-top: 2px dashed #e4e3e3;
+    width: 100%;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+}
+
+#faq .title {
+    font-weight: lighter;
+    color: #a3a0ad;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+#faq .heading {
+    color: #7d7d7d;
+    font-size: 1.33m;
+    font-weight: bold;
+}
+
+#faq {
+    font-family: Arimo, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #4a4a4a;
+    font-size: 0.95em;
+    margin-bottom: 40px;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a {
+    color: white;
 }
