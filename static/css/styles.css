@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300&family=Exo+2:wght@600&display=swap');
 
 * {
     margin: 0;
@@ -50,7 +50,7 @@ header #logo span {
     #logo {
         margin-top: 15px;
         width: 100%;
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     #about {
@@ -61,9 +61,10 @@ header #logo span {
 
 #about {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 40px;
     margin-bottom: 10px;
+    font-family: 'Exo 2', serif;
 }
 #about > a {color: #fff;
     text-decoration: none;
@@ -98,9 +99,9 @@ header.fixed #logo {
 #top {
     width: 100%;
     height: 1000px; 
-    background-image: url('https://yu.edu.kz/wp-content/uploads/2018/08/aditya-chinchure-494048-unsplash.jpg');
+    background-image: url('https://www.6amgroup.com/wp-content/uploads/2016/08/Festival-Crowd--e1472160900369.jpg');
     background-blend-mode: multiply;
-    background-color: #2e3a44;
+    background-color: gray;
     background-size: cover;
     text-align: center;
     color: white;
@@ -174,17 +175,16 @@ header.fixed #logo {
     float: left;
 }
 
-#main h2 {font-size: 3em}
+#main h2 {font-size: 3em;}
 #main span {color: #a0a0a0}
 
 /* Блок с преимуществами */
 
 #overview {
     float: left;
-    background-image: url('https://i0.wp.com/sova.ponominalu.ru/wp-content/uploads/2018/06/aMKIbShBgpg.jpg?fit=2048%2C1366&ssl=1');
-
+    background-image: url('https://rurok18.com/wp-content/uploads/2019/07/Russkie-rok-pevitsy-kontsert.jpg');
+    background-color: rgb(63, 63, 63);
     background-blend-mode: multiply;
-    background-color: #4f1c75;
     background-size: cover;
     background-attachment: fixed;
 
@@ -192,7 +192,7 @@ header.fixed #logo {
     width: 100%;
     text-align: center;
     color: white;
-    font-family: 'Pangolin';
+    font-family: 'Comfortaa';
 
     
 }
@@ -302,7 +302,7 @@ h1 {
 }
 
 #faq {
-    background-color: white;
+    background-color: rgb(49, 49, 49);
     border-top: 2px dashed #e4e3e3;
     width: 100%;
     float: left;
@@ -332,7 +332,7 @@ h1 {
 #faq {
     font-family: Arimo, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: #4a4a4a;
+    color: #d6d6d6;
     font-size: 0.95em;
     margin-bottom: 40px;
 }
@@ -344,4 +344,81 @@ a:hover {
 
 a {
     color: white;
+}
+
+#main2 {
+    padding: 100px 20%;
+    width: 60%;
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color:  #d6d6d6;
+    font-size: 1.1em;
+}
+
+@media (min-width: 1401px) {
+    #main2 {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
+    #main2 {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    #main2 div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+
+#main2 div {
+    width: 48%;
+    margin-right: 2%;
+    float: right;
+}
+
+#main2 h4 {font-size: 3em;}
+#main2 span {color: #d6d6d6}
+
+#main2 {
+    background-image: url('https://ced.ncsu.edu/wp-content/uploads/2018/01/civicshiphop.jpg');
+}
+#music .img {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#music .img:nth-child(odd) {
+    margin-left: 18%;
+}
+
+#music img {
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    width: 100%;
+    max-width: 500px;
+    float: left;
+}
+
+
+
+@media (max-width: 700px) {
+    #music .img {
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 10%!important;
+    }
+}
+#main2 {
+    font-family: 'Exo 2', serif;
 }
